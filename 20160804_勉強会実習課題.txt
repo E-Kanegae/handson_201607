@@ -1,0 +1,29 @@
+★URL:http://IPアドレス:ポート/handson-web/meeting/detail?meetingId=1
+★入力チェックの条件：meetingIdが必須。
+エラーの場合は、top（田澤：HelloWorld）画面を表示させる。
+
+■hanson-webプロジェクト
+jp.co.handson.app.meetingパッケージ
+　　・MeetingController.java
+　　・MeetingForm.java
+　　
+view/meeting/meetingDetail.jsp
+■handson-domainプロジェクト
+jp.co.handson.domain.service.meetingパッケージ
+　　・MeetingService.java
+　　・MeetingServiceImpl.java
+
+jp.co.handson.domain.model.meetingパッケージ
+　　・MeetingInputBean.java
+　　・MeetingOutputBean.java
+■各クラスのフィールド
+・MeetingForm.java、MeetingInputBean.java
+ 以下のフィールドを用意
+ 　private String meetingId;
+
+・MeetingOutputBean.java
+ 以下のフィールドを用意
+ 　private String meetingNm;
+ 　private String reservationName;
+ 　private LocalDate date;
+ 　private LocalTime time;

@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("top")
+//@RequestMapping("top")
 public class TopController {
 
-    @RequestMapping(value = "/init", method = {
+    @RequestMapping(value = "top/init", method = {
             RequestMethod.GET, RequestMethod.POST
     })
     public String init(Model model) {

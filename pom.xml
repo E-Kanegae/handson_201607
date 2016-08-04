@@ -95,7 +95,7 @@
                     </executions>
                 </plugin>
 					  <!-- snip -->
-					  <plugin>
+					  <!--<plugin>
 					    <groupId>org.apache.tomcat.maven</groupId>
 					    <artifactId>tomcat7-maven-plugin</artifactId>
 					    <version>2.2</version>
@@ -104,7 +104,8 @@
 					      <server>tomcat-localhost</server>
 					      <url>http://localhost:8080/handson</url>
 					    </configuration>
-					  </plugin>
+					  </plugin>-->
+					  <!-- snip -->      
             </plugins>
         </pluginManagement>
     </build>
