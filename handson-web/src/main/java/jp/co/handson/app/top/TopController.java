@@ -2,7 +2,6 @@
 package jp.co.handson.app.top;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -13,7 +12,7 @@ public class TopController {
     @RequestMapping(value = "top/init", method = {
             RequestMethod.GET, RequestMethod.POST
     })
-    public String init(Model model) {
+    public String init() {
         return "top/top";
     }
 }
