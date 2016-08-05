@@ -1,7 +1,6 @@
 /**
  * @(#)MeetingForm.java
  * 
- * Copyright (c) 2017 GABA CORPORATION.
  */
 package jp.co.handson.app.meeting;
 
@@ -13,7 +12,6 @@ import lombok.Data;
 
 /**
  * [このクラスの説明を書きましょう]
- * @author NTT DATA
  * @version $Revision$
  */
 @Data

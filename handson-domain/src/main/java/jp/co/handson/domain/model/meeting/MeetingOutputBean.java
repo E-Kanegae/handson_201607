@@ -1,7 +1,6 @@
 /**
  * @(#)MeetingOutputBean.java
  * 
- * Copyright (c) 2017 GABA CORPORATION.
  */
 package jp.co.handson.domain.model.meeting;
 
@@ -10,7 +9,6 @@ import lombok.Data;
 
 /**
  * [このクラスの説明を書きましょう]
- * @author NTT DATA
  * @version $Revision$
  */
 @Data

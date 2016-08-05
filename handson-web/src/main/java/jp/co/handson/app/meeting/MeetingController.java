@@ -1,7 +1,6 @@
 /**
  * @(#)MeetingController.java
  * 
- * Copyright (c) 2017 GABA CORPORATION.
  */
 package jp.co.handson.app.meeting;
 
@@ -21,7 +20,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * [このクラスの説明を書きましょう]
- * @author NTT DATA
  * @version $Revision$
  */
 @Controller
