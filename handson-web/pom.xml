@@ -88,6 +88,43 @@
         </dependency>
         <!-- == End TERASOLUNA == -->
 
+		<!-- Start iText -->
+		<dependency>
+	        <groupId>com.lowagie</groupId>
+	        <artifactId>itext</artifactId>
+	        <exclusions>
+	            <exclusion>
+	                <artifactId>xml-apis</artifactId>
+	                <groupId>xml-apis</groupId>
+	            </exclusion>
+	            <exclusion>
+	                <artifactId>bctsp-jdk14</artifactId>
+	                <groupId>org.bouncycastle</groupId>
+	            </exclusion>
+	            <exclusion>
+	                <artifactId>jfreechart</artifactId>
+	                <groupId>jfree</groupId>
+	            </exclusion>
+	            <exclusion>
+	                <artifactId>dom4j</artifactId>
+	                <groupId>dom4j</groupId>
+	            </exclusion>
+	            <exclusion>
+	                <groupId>org.swinglabs</groupId>
+	                <artifactId>pdf-renderer</artifactId>
+	            </exclusion>
+	            <exclusion>
+	                  <groupId>org.bouncycastle</groupId>
+	                  <artifactId>bcprov-jdk14</artifactId>
+	              </exclusion>
+	          </exclusions>
+	      </dependency>
+	      <dependency>
+	          <groupId>org.bouncycastle</groupId>
+	          <artifactId>bcprov-jdk14</artifactId>
+	          <version>1.38</version>
+	      </dependency>
+		<!-- End iText -->
         <!-- == Begin Tomcat == -->
         <!-- Servlet API 3.0 & JSP API 2.2 -->
         <dependency>

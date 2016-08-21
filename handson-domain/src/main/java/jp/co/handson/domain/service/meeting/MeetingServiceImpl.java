@@ -29,8 +29,9 @@ public class MeetingServiceImpl implements MeetingService {
     public MeetingOutputBean display(MeetingInputBean input) {
         
         MeetingOutputBean output = new MeetingOutputBean();
+        output.setMeetingId(input.getMeetingId());
         output.setMeetingNm("Aスタジオ");
-        output.setReservationNm("鐘ヶ江 越");
+        output.setReservationNm("E-Kanegae");
         output.setDate("2016/8/4");
         output.setTime("10:00-11:00");
         

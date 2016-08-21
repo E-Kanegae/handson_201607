@@ -19,7 +19,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
- * [このクラスの説明を書きましょう]
+ * <pre>
+ * 会議室予約機能の以下の処理を記述するコントローラクラス<br>
+ * <br>
+ * 詳細画面表示処理<br>
+ * 印刷画面表示処理<br>
+ * </pre>
  * @version $Revision$
  */
 @Controller
@@ -49,6 +54,25 @@ public class MeetingController {
         model.addAttribute("output", output);
         
         return "meeting/meetingDetail";
+        
+    }
+    
+    @RequestMapping(value="print", method = RequestMethod.GET)
+    public String print(@Validated MeetingForm meetingForm, BindingResult result, Model model){
+        
+        if(result.hasErrors()){
+            return  "meeting/meetingDetail";
+        }
+        
+        //Form→IputBeanへのマッピング
+        MeetingInputBean input = new MeetingInputBean();
+        input.setMeetingId(meetingForm.getMeetingId());
+        //サービスの呼び出し
+        MeetingOutputBean output = meetingService.display(input);
+        
+        model.addAttribute("output", output);
+        
+        return "meetingDetailPdfView"; 
         
     }
     

@@ -5,6 +5,7 @@
 package jp.co.handson.domain.model.meeting;
 
 import java.io.Serializable;
+
 import lombok.Data;
 
 /**
@@ -17,6 +18,7 @@ public class MeetingOutputBean implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
+    private String MeetingId;
     private String meetingNm;
     private String reservationNm;
     private String date;
